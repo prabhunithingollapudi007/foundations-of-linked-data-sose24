@@ -1,0 +1,4 @@
+
+ssh ec25opos@paul.ti.rw.fau.de
+
+scp  ./construct.rq ec25opos@paul.ti.rw.fau.de:/home/rzlin/ec25opos/public_html/construct.rq

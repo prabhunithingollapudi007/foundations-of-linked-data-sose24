@@ -1,0 +1,6 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+SELECT ?label
+WHERE {
+  ?s ?p ?label .
+  FILTER (datatype(?label) = xsd:integer || datatype(?label) = xsd:decimal)
+}

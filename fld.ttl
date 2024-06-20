@@ -1,0 +1,23 @@
+@prefix : <#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+# Player information
+:player :name "Jose Alvarado"^^xsd:string; # (a)
+          :occupation "basketball player"^^xsd:string; # (b)
+          :plays_for :team; # (c)
+          :sport_number "15"^^xsd:integer; # (d)
+          :position "Guard"^^xsd:string; # (e)
+          :date_of_birth "1998-04-12"^^xsd:date; # (f)
+          :nationality "American"^^xsd:string; # (g)
+          :handedness "Right"^^xsd:string; # (h)
+          :height [schema:value "6.0"^^xsd:decimal; schema:unitCode "FT"]; # (i)
+          :weight [schema:value "179"^^xsd:decimal; schema:unitCode "LB"]. # (j)
+
+# Team information
+:team :plays_in :nba; # (A)
+      :name "New Orleans Pelicans"@en; # (B)
+      :home_venue "Smoothie King Center"@en. # (C)
+:nba :name "National Basketball Association"@en. # (D)
+:another_team :plays_in :nba; # (E)
+           :name "Dallas Mavericks"@en. # (F)

@@ -1,0 +1,8 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+SELECT ?s ?p ?o
+WHERE {
+  ?s ?p ?o
+}
+ORDER BY DESC(?s) ASC(?p)
+LIMIT 1
+OFFSET 7

@@ -1,0 +1,4 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+SELECT (ROUND(ABS(91054 * -3 / 33)) AS ?result)
+WHERE {
+}

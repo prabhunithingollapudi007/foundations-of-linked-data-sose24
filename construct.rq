@@ -1,0 +1,10 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+CONSTRUCT {
+    ?player ex:sport_number ?new_sport_number
+}
+WHERE {
+    SELECT ?player (?sport_number + 23 AS ?new_sport_number)
+    WHERE {
+        ?player ex:sport_number ?sport_number .
+    }
+}

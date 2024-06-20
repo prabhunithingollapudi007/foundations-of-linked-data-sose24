@@ -1,0 +1,6 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+SELECT ?year
+WHERE {
+  ?s ex:date_of_birth ?date_of_birth .
+  BIND(SUBSTR(STR(?date_of_birth), 1, 4) AS ?year)
+}

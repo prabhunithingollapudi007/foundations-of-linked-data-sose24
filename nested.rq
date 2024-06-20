@@ -1,0 +1,10 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+SELECT (COUNT (*) AS ?num)
+WHERE {
+  {
+    SELECT ?s ?p ?o
+    WHERE {
+      ?s ?p ?o
+    }
+  }
+}

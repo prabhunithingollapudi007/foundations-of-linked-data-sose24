@@ -1,0 +1,4 @@
+PREFIX ex: <https://paul.ti.rw.fau.de/~ec25opos/fld.ttl#>
+ASK {
+  ?team ex:name "Utah Jazz"@en.
+}
