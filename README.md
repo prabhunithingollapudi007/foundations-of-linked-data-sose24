@@ -1,0 +1,1 @@
+This repository contains the code for bonus tasks of the course "Foundations of Linked Data" at FAU Erlangen-Nürnberg.
