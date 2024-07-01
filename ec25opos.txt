@@ -1,1 +1,1 @@
-https://paul.ti.rw.fau.de/~ec25opos/fld.ttl
+https://paul.ti.rw.fau.de/~ec25opos/mapping.ttl

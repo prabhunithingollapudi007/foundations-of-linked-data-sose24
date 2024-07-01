@@ -1,0 +1,38 @@
+@prefix : <./fld.ttl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+## Map Instances
+:FT owl:sameAs unit:FT . # http://qudt.org/vocab/unit/FT
+:LB owl:sameAs unit:LB . # http://qudt.org/vocab/unit/LB
+
+## Map properties
+:name rdfs:subPropertyOf  foaf:name . 
+
+:occupation rdfs:subPropertyOf  wd:P106 . # https://www.wikidata.org/wiki/Property:P106
+:plays_for rdfs:subPropertyOf  wd:P54 . # https://www.wikidata.org/wiki/Property:P54
+:sport_number rdfs:subPropertyOf  wd:P1618 . # https://www.wikidata.org/wiki/Property:P1618
+:position rdfs:subPropertyOf  wd:P413 . # https://www.wikidata.org/wiki/Property:P413
+:date_of_birth rdfs:subPropertyOf  wd:P569 . # https://www.wikidata.org/wiki/Property:P569
+:nationality rdfs:subPropertyOf  wd:P27 . # https://www.wikidata.org/wiki/Property:P27
+:handedness rdfs:subPropertyOf  wd:P552 . # https://www.wikidata.org/wiki/Property:P552 
+:height rdfs:subPropertyOf  wd:P2048 . # https://www.wikidata.org/wiki/Property:P2048
+:weight rdfs:subPropertyOf  wd:P2067 . # https://www.wikidata.org/wiki/Property:P2067
+
+:value rdfs:subPropertyOf  rdf:value . # http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+:decimal rdfs:subPropertyOf  rdf:datatype . # http://www.w3.org/1999/02/22-rdf-syntax-ns#datatype
+:unitCode rdfs:subPropertyOf  wd:P5061 . # https://www.wikidata.org/wiki/Property:P5061
+
+:plays_in rdfs:subPropertyOf  wd:P463 . # https://www.wikidata.org/wiki/Property:P463
+:home_venue rdfs:subPropertyOf  wd:P115 . # https://www.wikidata.org/wiki/Property:P115
+
+
+## Map Classes
+:player owl:sameAs  wd:Q97185180 . # https://www.wikidata.org/wiki/Q97185180
+:team owl:sameAs  wd:Q172339 . # https://www.wikidata.org/wiki/Q172339
+:nba owl:sameAs  wd:Q155223 . # https://www.wikidata.org/wiki/Q155223
+:another_team owl:sameAs  wd:Q132893 . # https://www.wikidata.org/wiki/Q132893
